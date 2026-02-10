@@ -4,7 +4,7 @@ Este repositorio contiene la implementación práctica y explicada de los concep
 
 El objetivo principal es preparar datos de texto para el entrenamiento de un LLM tipo GPT, cubriendo desde la tokenización hasta la generación de embeddings.
 
-## 📂 Archivos del Proyecto
+## Archivos del Proyecto
 
 *   **`embeddings.ipynb`**: Notebook principal creado. Contiene:
     *   Código core para tokenización (BPE) y creación de datasets.
@@ -15,7 +15,7 @@ El objetivo principal es preparar datos de texto para el entrenamiento de un LLM
 *   **`the-verdict.txt`**: Corpus de texto utilizado (cuento corto de Edith Wharton).
 *   **`the veredict.txt`**: (Archivo original renombrado a `the-verdict.txt` para consistencia).
 
-## 🚀 Proceso de Implementación
+## Proceso de Implementación
 
 ### 1. Preparación del Entorno
 Se descargaron los archivos necesarios y se renombró el archivo de texto a `the-verdict.txt` para asegurar la compatibilidad con el código estándar del libro.
@@ -38,7 +38,7 @@ Utilizamos el script `experiment.py` para analizar cómo el parámetro `stride` 
 ### 5. Embeddings
 Finalmente, implementamos capas de embeddings (`torch.nn.Embedding`) para transformar los IDs de los tokens en vectores densos continuos, sumando embeddings posicionales para retener la información del orden de las palabras.
 
-## 🛠️ Cómo Ejecutar
+## Cómo Ejecutar
 
 1.  **Instalar dependencias:**
     ```bash
@@ -49,11 +49,11 @@ Finalmente, implementamos capas de embeddings (`torch.nn.Embedding`) para transf
     Abrir `embeddings.ipynb` en Jupyter Lab o VS Code y ejecutar las celdas secuencialmente.
 
 3.  **Reproducir el Experimento:**
-    EJecutar el script desde la terminal:
+    Ejecutar el script desde la terminal:
     ```bash
     python experiment.py
     ```
 
-## 🧠 Conceptos Clave para Agentes
+## Conceptos Clave para Agentes
 *   **Embeddings:** Son la base de la "comprensión" semántica. Permiten que un agente relacione instrucciones de usuario con conceptos aprendidos.
 *   **Context Window:** La gestión eficiente de la ventana de contexto (vía sliding windows durante el entrenamiento) permite al agente mantener la coherencia en conversaciones largas.
